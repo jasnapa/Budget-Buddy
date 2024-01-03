@@ -1,5 +1,6 @@
 import bcrypt from "bcrypt";
-import UserModel from "../model/userModel";
+import UserModel from "../model/userModel.js";
+import { createToken } from "../utils/createToken.js";
 
 export async function signUp(req, res) {
   try {
@@ -36,15 +37,14 @@ export async function login(req, res) {
         return res
           .status(500)
           .json({ status: false, message: "Internal Server Error" })
-          
+
       res.cookie("token", token, {
         withCredentials: true,
         httpOnly: false,
         sameSite: "None",
         secure: true,
       });
-      res.json({ login: true, user, token });
-    }
+      return res.status(200).json({ status: true, message: "Login Succes" })    }
   } catch (error) {
     console.log(error);
   }
