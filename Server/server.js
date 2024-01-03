@@ -1,9 +1,13 @@
 import express from 'express'
+import dbConnect from './config/dbConnect.js';
+import cookieParser from 'cookie-parser';
+import 'dotenv/config.js'
 
 
 
 const app = express()
 
+dbConnect()
 
 app.use(express.json())
 app.use(cookieParser());
