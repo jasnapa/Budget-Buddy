@@ -22,6 +22,6 @@ const expenseSchema = new mongoose.Schema({
     
 });
 
-const userModel = mongoose.model("user", userSchema)
+const expenseModel = mongoose.model("expense", expenseSchema)
 
-export default userModel
+export default expenseModel

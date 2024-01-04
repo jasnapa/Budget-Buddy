@@ -2,7 +2,7 @@ import axios from "axios";
 import { useFormik } from "formik";
 import { useNavigate } from "react-router-dom";
 import * as Yup from "yup";
-
+import expense from "./assets/expense.jpg"
 
 
 
@@ -33,7 +33,7 @@ const Login = () => {
             
     
             if (data.status) {
-              navigate("/home");
+              navigate("/dashboard");
             
             } else if (data.error) {
               toast.error(data.message, {
@@ -106,8 +106,10 @@ const Login = () => {
                       </a>
                     </div>
                   </div>
-        
-                 
+                  <div className="w-1/2 md:block hidden">
+            <img className=" rounded-2xl" src={expense} alt="" />
+          </div>
+                
                 </div>
               </section>
             </>
