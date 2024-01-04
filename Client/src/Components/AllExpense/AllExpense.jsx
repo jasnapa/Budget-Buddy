@@ -77,4 +77,4 @@ const AllExpense = () => {
   );
 };
 
-export default AllExpense;
+export default AllExpense

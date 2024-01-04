@@ -39,7 +39,7 @@ const Sidebar = () => {
               </button>
               <a href="https://flowbite.com" className="flex ml-2 md:mr-24">
                 <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">
-                  Shaj Paradise
+                  Budget Buddy
                 </span>
               </a>
             </div>
@@ -103,14 +103,7 @@ const Sidebar = () => {
                         Earnings
                       </a>
                     </li>
-                    <li>
-                      <a
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
-                        role="menuitem"
-                      >
-                        Sign out
-                      </a>
-                    </li>
+                    
                   </ul>
                 </div>
               </div>
@@ -184,30 +177,6 @@ const Sidebar = () => {
                 <span className="ml-2">
                   <Link to={"/allExpense"}>All Expenses</Link>
                 </span>
-              </a>
-            </li>
-
-
-            <li
-              onClick={() => {
-                localStorage.removeItem("AdminJwtKey");
-                navigate("/admin/login");
-              }}
-            >
-              <a className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                <svg
-                  className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M15.776 1.553A10 10 0 1 0 18.243 15L14 16.071l1.071-4.243A10 10 0 0 0 15.776 1.553zM10 2C5.029 2 1 6.029 1 11s4.029 9 9 9 9-4.029 9-9-4.029-9-9-9zm0 16.75A7.75 7.75 0 1 1 10 1.25v17.5z"
-                  />
-                </svg>
-                <span className="ml-2">Sign out</span>
               </a>
             </li>
           </ul>
