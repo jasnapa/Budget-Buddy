@@ -13,6 +13,9 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true
     },   
+    monthlyBudget: {
+        type: Number,
+    },  
 })
 
 const UserModel = mongoose.model("users", UserSchema)
