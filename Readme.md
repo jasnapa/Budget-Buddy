@@ -36,5 +36,18 @@
 1. Visit the "Dashboard" section.
 2. View a summary of your current month's expenses and budget.
 
+## Technologies Used
+
+- **Frontend:**
+  - [React](https://reactjs.org/) - JavaScript library for building user interfaces.
+  - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework.
+  
+- **Backend:**
+  - [Node.js](https://nodejs.org/) - JavaScript runtime.
+  - [Express](https://expressjs.com/) - Web application framework for Node.js.
+  - [MongoDB](https://www.mongodb.com/) - NoSQL database for storing data.
+
+- **Database:**
+  - MongoDB - Used to store user and expense data.
 
 ### Thank You
